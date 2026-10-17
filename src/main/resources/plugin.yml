@@ -1,0 +1,21 @@
+name: IShulker
+version: '${project.version}'
+api-version: '1.21'
+main: com.auracode.ishulker.IShulkerPlugin
+authors: [AuraCode]
+description: Открывайте шалкеры прямо из руки, не ставя их на землю.
+website: https://github.com/igormaclakoff-dev
+
+commands:
+  ishulker:
+    description: Управление IShulker.
+    usage: /ishulker <on|off|toggle|reload|status|help|version>
+    aliases: [ish, ishulk]
+
+permissions:
+  ishulker.admin:
+    description: Доступ к управлению IShulker
+    default: op
+  ishulker.use:
+    description: Позволяет открывать шалкеры прямо из руки
+    default: op
